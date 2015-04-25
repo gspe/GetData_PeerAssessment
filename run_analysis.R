@@ -56,6 +56,6 @@ HAR.data.2 <- select(HAR.data, Subject, Activity, contains("mean"), contains("st
 HAR.data.3 <- summarise_each(group_by(HAR.data.2, Subject, Activity), funs(mean))
 
 # Write data set to file
-result_analisys <- "result_analisys.txt"
+result_analisys <- "result_analysis.txt"
 write.table(HAR.data.3, file = result_analisys, row.names = FALSE)
 
