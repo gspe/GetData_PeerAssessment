@@ -16,3 +16,5 @@ vignettes/*.pdf
 data/*
 # result of analisys
 result_analisys.txt
+# html files
+*.html
